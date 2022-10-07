@@ -29,7 +29,7 @@ function App() {
       </div>
       <div>
         <label>Intensity</label>
-        <select name="intensity" value={intensity} onChange={e => setWeight(e.target.value)}>
+        <select name="intensity" value={intensity} onChange={e => setIntensity(e.target.value)}>
           <option value="1.3">Light</option>
           <option value="1.5">Usual</option>
           <option value="1.7">Moderate</option>
@@ -39,8 +39,8 @@ function App() {
       </div>
       <div>
         <label>Gender</label>
-        <input type="radio" name="gender" value="male" defaultChecked onChange={e => setWeight(e.target.value)} /><label>Male</label>
-        <input type="radio" name="gender" value="female" onChange={e => setWeight(e.target.value)} /><label>Female</label>
+        <input type="radio" name="gender" value="male" defaultChecked onChange={e => setGender(e.target.value)} /><label>Male</label>
+        <input type="radio" name="gender" value="female" onChange={e => setGender(e.target.value)} /><label>Female</label>
       </div>
       <div>
         <output>{result.toFixed(0)} Calories</output>
